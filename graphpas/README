@@ -4,12 +4,12 @@
 
 ## Как использовать
 
-1. Запустите программу.
+1. Запустите программу **от имени администратора**.
 2. Введите имя пользователя, для которого нужно изменить пароль.
 3. Введите новый пароль.
 4. Нажмите кнопку "Изменить пароль".
 
-Программа выполнит команду `net user` для изменения пароля указанного пользователя.
+Программа выполнит команду `net user` для изменения пароля указанного пользователя. Для выполнения этой команды требуются права администратора.
 
 ## Требования
 
@@ -25,6 +25,8 @@
 pyinstaller --onefile --noconsole pas.py
 ```
 
+После сборки запускайте созданный `.exe` файл **от имени администратора**, чтобы программа могла корректно изменить пароль.
+
 ---
 
 # Changing the Password of a Computer Account
@@ -33,12 +35,12 @@ This program provides a graphical interface for changing the password of a compu
 
 ## How to Use
 
-1. Run the program.
+1. Run the program **as an administrator**.
 2. Enter the username for which you want to change the password.
 3. Enter the new password.
 4. Click the "Change Password" button.
 
-The program will execute the `net user` command to change the password for the specified user.
+The program will execute the `net user` command to change the password for the specified user. Administrator privileges are required to execute this command.
 
 ## Requirements
 
@@ -53,3 +55,5 @@ To create an executable `.exe` file, use `PyInstaller`. Command for building:
 ```bash
 pyinstaller --onefile --noconsole pas.py
 ```
+
+After building, run the generated `.exe` file **as an administrator** to ensure the program can successfully change the password.
