@@ -1,0 +1,55 @@
+# Изменение пароля учетной записи компьютера
+
+Эта программа предоставляет графический интерфейс для изменения пароля учетной записи на компьютере с использованием Python и библиотеки `tkinter`.
+
+## Как использовать
+
+1. Запустите программу.
+2. Введите имя пользователя, для которого нужно изменить пароль.
+3. Введите новый пароль.
+4. Нажмите кнопку "Изменить пароль".
+
+Программа выполнит команду `net user` для изменения пароля указанного пользователя.
+
+## Требования
+
+- **Операционная система**: Windows
+- **Python**: Версия 3.7 или выше
+- Установленные зависимости (если вы запускаете из исходного кода):
+  - `tkinter`
+
+## Сборка в .exe
+
+Для создания исполняемого файла `.exe` используется `PyInstaller`. Команда для сборки:
+```bash
+pyinstaller --onefile --noconsole pas.py
+```
+
+---
+
+# Changing the Password of a Computer Account
+
+This program provides a graphical interface for changing the password of a computer account using Python and the `tkinter` library.
+
+## How to Use
+
+1. Run the program.
+2. Enter the username for which you want to change the password.
+3. Enter the new password.
+4. Click the "Change Password" button.
+
+The program will execute the `net user` command to change the password for the specified user.
+
+## Requirements
+
+- **Operating System**: Windows
+- **Python**: Version 3.7 or higher
+- Installed dependencies (if running from source code):
+  - `tkinter`
+
+## Building an .exe File
+
+To create an executable `.exe` file, use `PyInstaller`. Command for building:
+```bash
+pyinstaller --onefile --noconsole pas.py
+```
